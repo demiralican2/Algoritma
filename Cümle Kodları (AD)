@@ -1,0 +1,58 @@
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class KelimeKodlarıAD {
+	public static void main(String[] args) {
+	       Scanner oku=new Scanner(System.in);
+	        
+	       
+	       String cumle;
+	       int karakter;
+
+	   	System.out.print("Bir Cümle Giriniz:   ");
+
+	   	Scanner scan=new Scanner(System.in);
+	   	String kelime=scan.nextLine();
+	   	
+	   	karakter=kelime.length();
+
+
+	   	for (int i =kelime.length()-1; i >=0; i--){
+
+
+	   		System.out.print( kelime.charAt(i));
+
+	   	}
+	       
+	        
+	        int value;
+	        HashMap<Character,Integer> map = new HashMap<Character,Integer>();
+	         for (int i=0; i<kelime.length(); i++){
+	            
+	        	if(map.containsKey(kelime.charAt(i))){
+	                value = map.get(kelime.charAt(i));
+	                value ++;
+	                map.put(kelime.charAt(i),value);
+	            }else{
+	                map.put(kelime.charAt(i),1);
+	            }
+	        }
+	        for ( Character key : map.keySet()){
+	            System.out.println("\t "+key+" : " +map.get(key)+" ");
+	        }
+	        
+	        
+	        
+	       
+
+	        showWords(kelime);
+	  }
+
+	    public static void showWords(String kelime) {
+	        int space =kelime.indexOf("");
+	         kelime = kelime.substring(0,space) + "" + kelime.replaceAll("\\s+","\n");
+	        System.out.println(kelime);
+	        
+	    }
+}
+	  
