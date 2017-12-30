@@ -1,0 +1,24 @@
+package JavaSorular;
+import java.util.Scanner;
+public class JavaSoru9 {
+
+	public static void main(String[] args) {
+		Scanner ali = new Scanner(System.in);
+		
+		int a;
+		
+		System.out.println("Bir sayı giriniz: ");
+		a = ali.nextInt();
+		
+		if(a%2==0)
+		{
+			System.out.println("Girdiğiniz sayı çifttir.");
+		}
+		else
+		{
+			System.out.println("Girdiğiniz sayı tektir.");
+		}
+		
+	}
+
+}
