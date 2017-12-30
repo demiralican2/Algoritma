@@ -1,0 +1,25 @@
+package JavaSorular;
+
+public class JavaSoru6 {
+
+	public static void main(String[] args) {
+		int toplam=0;
+		int k=1;
+		System.out.println( "1'den 1000'e kadar 5'e bölünen fakat 7'ye bölünemeyen sayılar: " +"\n");
+		
+		for(k=1;k<1000;k++)
+		{
+			
+		if(k%5==0&&k%7!=0)
+			
+		{
+			System.out.print(k+ "-");
+			toplam=toplam+k;
+		} 
+	}
+		
+	System.out.print("\n" + "\n"  +"Ve bu sayıların toplamı: "+toplam);
+
+	}
+
+}
