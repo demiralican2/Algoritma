@@ -1,0 +1,26 @@
+package JavaSorular;
+import java.util.Scanner;
+public class JavaSoru21 {
+
+	public static void main(String[] args) {
+		
+		Scanner ali =new Scanner(System.in);
+		
+		
+		int faktoriyel;
+		
+		System.out.println("Bir Sayı Giriniz: ");
+		faktoriyel = ali.nextInt();
+		
+		int c = 1;
+		int b =1;
+		
+		for(b=1; b<=faktoriyel; b++)
+		{
+			c = c*b;
+		}
+		
+		System.out.println(faktoriyel + "! : " + c);
+	}
+
+}
