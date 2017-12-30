@@ -17,8 +17,8 @@ public class JavaSoru5 {
 		System.out.println("Kelimenin ekrana yazdırılmasını istediğiniz miktarı giriniz: ");
 		sayi=ali.nextInt();
 		
-		
-		for(int i=0;i<sayi;i++)
+		int i=0;
+		for(i=0;i<sayi;i++)
 		{
 			System.out.println(kelime);
 		}
