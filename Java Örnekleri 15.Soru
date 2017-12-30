@@ -1,0 +1,22 @@
+package JavaSorular;
+
+import java.util.Scanner;
+
+public class JavaSoru15 {
+
+	public static void main(String[] args) {
+		Scanner ali=new Scanner(System.in);
+		String girilen;
+		
+		System.out.print("Kelimeyi veya cümleyi girin:");
+		girilen=ali.nextLine();
+		
+		
+		for (int i =girilen.length()-1; i >=0; i--)
+		{
+		System.out.print(girilen.charAt(i));
+		}
+
+	}
+
+}
