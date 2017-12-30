@@ -1,0 +1,25 @@
+package JavaSorular;
+
+import java.util.Scanner;
+
+public class JavaSoru16 {
+
+	private static Scanner ali;
+
+	public static void main(String[] args) {
+		
+		        ali = new Scanner(System.in);
+
+		        System.out.println("Cümleyi girin:");
+		        String cumle = ali.nextLine();
+
+		        showWords(cumle);
+		}
+
+		    public static void showWords(String cumle) {
+		        int space = cumle.indexOf("");
+		        cumle = cumle.substring(0,space) + cumle.replaceAll("\\s+", "\n");
+		        System.out.println(cumle);
+	}
+
+}
