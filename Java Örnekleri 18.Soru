@@ -1,6 +1,6 @@
 package JavaSorular;
 import java.util.Scanner;
-public class JavaSoru17 {
+public class JavaSoru18 {
 
 	public static void main(String[] args) {
 	Scanner ali = new Scanner(System.in);
