@@ -1,0 +1,26 @@
+package alican;
+
+import java.util.Scanner;
+
+public class girilensayilaritoplama {
+	
+	private static Scanner ali;
+
+	public static void main (String[] args) {
+
+		int toplam=0;
+        System.out.println("Toplamak istediğiniz 15 adet sayıdan ");
+        ali = new Scanner(System.in);
+        int i=1;
+        while (i<16) {
+            
+        	System.out.println(i+". sayiyi giriniz: ");
+            int sayi=ali.nextInt();
+            
+            toplam+=sayi;
+            i++;
+        }
+        System.out.println("Girdiginiz sayilarin toplami = "+toplam);
+	}
+
+}
