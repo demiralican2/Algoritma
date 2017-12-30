@@ -1,0 +1,17 @@
+package JavaSorular;
+import java.util.Scanner;
+public class JavaSorular11 {
+
+	public static void main(String[] args) {
+		Scanner ali = new Scanner(System.in);
+		String a;
+		String b;
+		
+		System.out.println("Bir kelime veya cümle giriniz: ");
+		a=ali.nextLine();
+		b=a.toUpperCase();
+		System.out.println("Girdiğiniz kelime veya cümlenin yeni hali:" + "\n" +b);
+
+	}
+
+}
