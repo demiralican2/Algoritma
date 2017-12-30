@@ -1,0 +1,38 @@
+package JavaSorular;
+import java.util.Scanner;
+public class JavaSoru2 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan=new Scanner(System.in);
+		  
+		     int girilen = 1;   
+		     int toplam=0;                 
+		     int sonuc=0;
+		     int sayi=0;
+		        
+		     
+		     
+		     while (girilen != 0) {
+		        toplam += girilen;       
+		        sayi++;
+		        System.out.println("Bir sayı giriniz: ");
+		        System.out.println("İşlemi sonlandırmak için 0'a basınız.");
+		        girilen = scan.nextInt();
+		        sonuc+=girilen;
+		        
+		        if (girilen == 0) {
+				   	 
+		        	System.out.println("Girdiğiniz sayıların toplamı : "+sonuc);
+			        
+			     }
+		        
+			      
+			      
+			     }
+		     }
+		   
+		  } 
+		  
+		
+	
