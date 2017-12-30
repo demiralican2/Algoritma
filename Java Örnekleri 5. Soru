@@ -1,0 +1,27 @@
+package JavaSorular;
+import java.util.Scanner;
+public class JavaSoru5 {
+
+	private static Scanner ali;
+
+	public static void main(String[] args) {
+		ali = new Scanner(System.in);
+		
+		int sayi;
+		String kelime;
+		
+		System.out.println("Bir kelime giriniz: ");
+		kelime=ali.nextLine();
+		
+		
+		System.out.println("Kelimenin ekrana yazdırılmasını istediğiniz miktarı giriniz: ");
+		sayi=ali.nextInt();
+		
+		
+		for(int i=0;i<sayi;i++)
+		{
+			System.out.println(kelime);
+		}
+	}
+
+}
