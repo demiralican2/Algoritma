@@ -1,0 +1,19 @@
+package JavaSorular;
+import java.util.Scanner;
+public class JavaSoru17 {
+
+	public static void main(String[] args) {
+	Scanner ali = new Scanner(System.in);
+	
+	double celcius;
+	
+	System.out.println("Fahrenheit'e çevirmek istediğiniz"+ "\n" + "Celcius değerini giriniz:");
+	celcius = ali.nextDouble();
+	
+	double fahrenheit = celcius*9/5+32;
+	
+	System.out.println("Girdiğiniz " + celcius + " Celcius "+"\n"+fahrenheit + " Fahrenheit'a Eşittir.");
+	
+	}
+
+}
