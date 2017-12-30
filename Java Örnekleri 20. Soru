@@ -1,0 +1,30 @@
+package JavaSorular;
+
+public class JavaSoru20 {
+
+	public static void main(String[] args) {
+		
+		int k=0;
+		int i=0;
+		int sıralama[]= {2,4,6,8,10,3,5,7};
+		
+    System.out.print("Dizide ki çift sayılar: ");
+		for(k=0;k<100;k++)
+		{
+			if(sıralama[k]%2==0)
+			{
+				System.out.print(sıralama[k]+" ");
+			}
+		}
+		
+		System.out.print("\n" + "Dizide ki tek sayılar: ");
+		for(i=0;i<100;i++)
+		{
+			if(sıralama[i]%2!=0)
+			{
+				System.out.print(sıralama[i]+" ");
+			}
+		}
+	}
+
+}
