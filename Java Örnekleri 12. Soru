@@ -1,0 +1,33 @@
+package JavaSorular;
+import java.util.Scanner;
+public class JavaSoru12 {
+	
+	public static Scanner ali;
+	public static void main(String[] args) {
+		
+		ali =new Scanner(System.in);
+		
+		int a,b,c;
+		
+		System.out.println("Birinci sayıyı giriniz: ");
+		a =ali.nextInt();
+		System.out.println("İkinci sayıyı giriniz: ");
+		b =ali.nextInt();
+		System.out.println("Üçüncü sayıyı giriniz: ");
+		c =ali.nextInt();
+		
+	
+			if(a>b && a>c)
+			{
+				System.out.println("En büyük sayı: " + a );
+			}
+			if(b>c && b>a)
+			{
+				System.out.println("En büyük sayı: " + b );
+			}
+			if(c>b && c>a)
+			{
+				System.out.println("En büyük sayı: " + c );
+			}
+		}
+	}
