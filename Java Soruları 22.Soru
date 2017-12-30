@@ -1,0 +1,47 @@
+package JavaSorular;
+import java.util.Scanner;
+import java.util.Random;
+public class JavaSoru22 {
+
+public static void main(String[] args) {
+
+	Scanner klavye = new Scanner(System.in);
+
+	Random rnd=new Random();
+	int tutulan=rnd.nextInt(50)+5;
+	
+	System.out.println("Hadi seninle güzel bir oyun oynayalım :)" + "\n" + "Oynamak istiyorsan");
+	
+	int hak = 9;
+	for (;hak>=0;hak--)
+	{
+	System.out.println("Bir sayı gir : ");
+	int girilen = klavye.nextInt();
+	
+	if(girilen==tutulan)
+
+	{
+		System.out.println("Doğru tahmin dostum tebrik ederim :) " + tutulan);
+		break;
+	}
+
+	else if(girilen>tutulan)
+	{
+		System.out.println("Girdiğiniz sayı rastgele sayıdan büyüktür "+ "\n"+ "Kalan hakkınız: "+hak);
+	}
+
+	else if (girilen<tutulan)
+	{
+	System.out.println("Girdiğiniz sayı rastgele sayıdan küçüktür "+ "\n"+ "Kalan hakkınız: "+ hak);
+	}
+	if(hak==1)
+	{
+		System.out.println("\n"+ "•••••••••••••••• Son hakkın iyi değerlendir ••••••••••••••••"+"\n");
+	}
+	if(hak==0)
+	{
+		System.out.println("\n"+"Hakkın bitti dostum tutulan sayı: "+ tutulan);
+	}
+}
+}
+}
