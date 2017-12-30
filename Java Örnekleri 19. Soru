@@ -1,0 +1,25 @@
+package JavaSorular;
+
+public class JavaSoru19 {
+
+	public static void main(String[] args) {
+		
+		
+		int sıralama[] = {5,9,54,632,32,77,52};
+		
+		int buyuk=sıralama[0];
+		int t=1;
+		
+		 for(t=1;t<sıralama.length;t++)
+		 {
+	        if(sıralama[t]>buyuk)
+	          {
+	            buyuk=sıralama[t];
+	                
+	       
+	   }
+	         
+	}
+		 System.out.println(buyuk);
+}
+}
