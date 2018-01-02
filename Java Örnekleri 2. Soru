@@ -23,7 +23,7 @@ public class JavaSoru2 {
 		        
 		        if (girilen == 0) {
 				   	 
-		        	System.out.println("45 ile 225 arasında ki 2'ye ve 7'ye tam "+ "\n" + "bölünebilen sayıların toplamı : " +sonuc);
+		        	System.out.println("Girdiğiniz sayıların toplamı : "+sonuc);
 			        
 			     }
 		        
