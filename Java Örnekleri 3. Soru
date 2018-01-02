@@ -16,7 +16,7 @@ public class JavaSoru3 {
 			}
 			
 		}
-		System.out.println(sonuc);
+		System.out.println("45 ile 225 arasında ki 2'ye ve 7'ye tam "+ "\n" + "bölünebilen sayıların toplamı : " +sonuc);
 
 	}
 
