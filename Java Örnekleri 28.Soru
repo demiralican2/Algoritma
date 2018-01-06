@@ -1,0 +1,36 @@
+package src;
+import java.util.Scanner;
+
+
+public class JavaSoru28 {
+	public static Scanner ali;
+	public static void main(String[] args) {
+			
+		ali = new Scanner(System.in);
+	      
+		System.out.print("Kelime Giriniz : ");
+	    String gir=ali.nextLine();
+
+	    String esit="";
+	      
+		int kelime=gir.length();
+	      
+		for(int i=kelime-1;i>=0;i--)
+	      {
+	    	  esit=esit+gir.charAt(i);
+	      }
+	      System.out.println("Ters Yazılışı : "+esit); 
+
+	      if(gir == esit)
+	      {
+	    	  System.out.println("Palindrom Kelimedir");
+
+	      }  else
+	      {
+	    	  System.out.println("Palindrom Kelime Değildir");
+	      }	
+	    }
+	
+
+
+	}
