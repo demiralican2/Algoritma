@@ -1,0 +1,44 @@
+package JavaSorular;
+import java.util.Arrays;
+import java.util.Scanner;
+public class JavaSoru29 {
+public static Scanner ali;
+	public static void main(String[] args) {
+		int a,b,c;
+		
+		ali = new Scanner(System.in);
+		
+		System.out.print("sayı giriniz: ");
+		a=ali.nextInt();
+		System.out.print("sayı giriniz: ");
+		b=ali.nextInt();
+		System.out.print("sayı giriniz: ");
+		c=ali.nextInt();
+		
+		
+		int dizi []= {a,b,c};
+		Arrays.sort(dizi);
+		for (int i=0;i<dizi.length;i++)
+		{
+			System.out.println(dizi[i]);
+		}
+		
+		if(dizi[0]!=dizi[1]&&dizi[1]!=dizi[2])
+		{
+			System.out.println(dizi[0]+"<"+dizi[1]+"<"+dizi[2]);
+		}
+		else if(dizi[0]==dizi[1]&&dizi[1]==dizi[2])
+		{
+			System.out.println(dizi[0]+"="+dizi[1]+"="+dizi[2]);
+		}
+		else if(dizi[0]!=dizi[1]&&dizi[1]==dizi[2])
+		{
+			System.out.println(dizi[0]+"<"+dizi[1]+"="+dizi[2]);
+		}
+		else 
+		{
+			System.out.println(dizi[0]+"="+dizi[1]+"<"+dizi[2]);
+		}
+
+	}
+	}
