@@ -1,0 +1,21 @@
+package JavaSorular;
+import java.util.Scanner;
+public class JavaSoru35 {
+
+	public static void main(String[] args) {
+		Scanner gir = new Scanner (System.in); 
+		
+		int sayi,x=1,y=1;     
+		
+		System.out.println("Bir sayı giriniz: ");      
+		sayi = gir.nextInt();    
+		
+		while (sayi/x>9){        
+			x=x*10;         
+			y++;         
+			} 
+		System.out.println("Girdiğiniz sayı "+y + " basamaklıdır.");         
+		} 
+	
+	}
+
