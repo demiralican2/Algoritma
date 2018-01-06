@@ -1,0 +1,26 @@
+package JavaSorular;
+import java.util.Scanner;
+public class JavaSoru34 {
+
+	public static void main(String[] args) {
+		
+		Scanner ali=new Scanner(System.in);
+		
+		
+		
+		System.out.println("A sayısını giriniz: ");
+		int a = ali.nextInt();
+		System.out.println("B sayısını giriniz: ");
+		int b = ali.nextInt();
+		
+		int sonuc=1;
+		for(int i=b;i>0;i--)
+		{
+			sonuc=sonuc*a;
+		}
+		
+		System.out.println("a^b : "+sonuc);
+		
+	}
+
+}
