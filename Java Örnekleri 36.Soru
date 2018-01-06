@@ -1,0 +1,51 @@
+package JavaSorular;
+
+import java.util.Scanner;
+
+public class JavaSoru36 {
+
+	public static void main(String[] args) {
+		
+		Scanner ali=new Scanner(System.in);
+		
+		int dizi[]=new int[10];
+		for(int i=0;i<=9;i++)
+		{	
+			System.out.print((i+1)+". Sayıyı Giriniz: ");
+			
+			dizi[i]=ali.nextInt();
+		}
+		for(int i=0; i<10; i++)
+		{
+			for(int j=i+1; j<10; j++)
+			{
+				if(dizi[i]>dizi[j])
+				{
+					int temp=dizi[j];
+					dizi[j]=dizi[i];
+					dizi[i]=temp;
+				}
+			}
+		}
+		
+		int buyuk=dizi[0];
+        for(int t=1;t<dizi.length;t++){
+            if(dizi[t]>buyuk){
+                buyuk=dizi[t];
+            }
+        }
+        System.out.println("En büyük sayı : "+buyuk);
+        
+        int kucuk=dizi[0];
+        for(int t=1;t<dizi.length;t++){
+            if(dizi[t]<kucuk){
+                kucuk=dizi[t];
+            }
+        }
+        System.out.println("En küçük sayı : "+kucuk);
+        System.out.println("En Büyük sayı + En Küçük sayı: "+(buyuk+kucuk));
+		
+
+	}
+
+}
