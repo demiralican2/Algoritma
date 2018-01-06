@@ -1,0 +1,26 @@
+package JavaSorular;
+import java.util.Scanner;
+public class JavaSoru33 {
+
+	public static void main(String[] args) {
+		
+		Scanner ali = new Scanner(System.in);
+		
+		int a;
+		double yuzde;
+		System.out.println("Bir sayı giriniz: ");
+		a =ali.nextInt();
+		
+		if(a>50) {
+			
+			yuzde=a*0.10;
+			System.out.print(yuzde);
+		}
+		else 
+		{
+			yuzde=a*0.25;
+			System.out.println(yuzde);
+		}
+	}
+
+}
