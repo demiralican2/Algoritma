@@ -1,0 +1,52 @@
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Arrays;
+import java.util.Scanner;
+public class TxteYazdirma {
+	
+	public static Scanner ali;
+	private static Object[] views;
+	public static void main(String[] args) throws IOException {
+		
+		 ali = new Scanner(System.in);
+		
+		int a,b,c,d,e;
+		
+		System.out.println("Birinci sayıyı giriniz: ");
+		a = ali.nextInt();
+		System.out.println("ikinci sayıyı giriniz: ");
+		b = ali.nextInt();
+		System.out.println("üçüncü sayıyı giriniz: ");
+		c = ali.nextInt();
+		System.out.println("Dördüncü sayıyı giriniz: ");
+		d = ali.nextInt();
+		System.out.println("Beşinci sayıyı giriniz: ");
+		e= ali.nextInt();
+
+		int [] dizi={a,b,c,d,e};
+		Arrays.sort(dizi); 
+		for (int i1 = 0; i1 < dizi.length; i1++)
+		{
+			System.out.println(dizi[i1]);
+			
+		
+		}
+		try
+		{
+		    PrintWriter pr = new PrintWriter("C:\\Users\\ALİCAN\\Desktop\\alican.txt");   //yazdırmak istediğiniz yerin özelliklerden 
+		    																				//konumunu kopyalayıp buraya yapıştırı
+		    for (int i1 = 0; i1 < dizi.length; i1++)
+			{
+				pr.println(dizi[i1]);
+		    }
+		    pr.close();
+		}
+		catch (Exception e1)
+		{
+		    e1.printStackTrace();
+		    System.out.println("No such file exists.");
+		}
+	}
+
+}
